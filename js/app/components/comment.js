@@ -426,7 +426,7 @@ export const comment = (() => {
         const nameValue = name.value;
 
         if (nameValue.length === 0) {
-            util.notify('Name cannot be empty.').warning();
+            util.notify('Isikan Nama Anda.').warning();
 
             if (id) {
                 // scroll to form.
@@ -437,7 +437,7 @@ export const comment = (() => {
 
         const presence = document.getElementById('form-presence');
         if (!id && presence && presence.value === '0') {
-            util.notify('Please select your attendance status.').warning();
+            util.notify('Pilih Konfirmasi Kehadiran.').warning();
             return;
         }
 
